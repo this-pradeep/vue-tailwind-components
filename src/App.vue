@@ -1,24 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="">
+      <div class="flex flex-row items-center justify-center w-80 mx-auto">
+        <img class="h-10" alt="Vue logo" src="./assets/logo.png" />
+        <h1 class="text-xl font-bold">Tailwind-Vue components</h1>
+      </div>
+    </div>
+    <Modal />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Modal from "./components/Modal.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Modal
   }
 };
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
